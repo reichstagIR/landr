@@ -16,10 +16,18 @@ const vazirmatnSans = Vazirmatn({
     subsets: ["arabic"],
 });
 
-export const metadata: Metadata = {
+export const metadata = {
     title: "Landr - صفحه اصلی",
     description:
         "شغل رویایی خود را با هوش مصنوعی زودتر به دست بیاورید. مصاحبه‌های شبیه‌سازی شده، تحلیل رزومه و آماده‌سازی فنی برای جستجوی شغلی موفق‌تر.",
+    icons: {
+        icon: "/favicon.svg",
+    },
+    appleTouchIcon: "/apple-apple-touch-icon-180.png",
+    appleWebApp: {
+        capable: true,
+        statusBarStyle: "black-translucent",
+    },
 };
 
 export default function RootLayout({

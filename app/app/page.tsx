@@ -27,6 +27,7 @@ import { Button } from "@/components/ui/button";
 import { JobInfoForm } from "@/features/jobInfos/components/JobInfoForm";
 // Lib
 import { formatExperienceLevel } from "@/features/jobInfos/lib/formatter";
+import InstallPrompt from "./_InstallPrompt";
 
 export default function AppPage() {
     return (
@@ -59,6 +60,7 @@ async function JobInfos() {
 
     return (
         <div className="container my-4">
+            <InstallPrompt />
             <div className="flex gap-2 justify-between mb-6">
                 <h1 className="text-3xl md:text-4xl lg:text-5xl mb-4">
                     اطلاعات شغل های شما
