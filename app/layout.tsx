@@ -1,5 +1,5 @@
 // Next
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 // Font
 import { Vazirmatn } from "next/font/google";
 // CSS
@@ -16,18 +16,22 @@ const vazirmatnSans = Vazirmatn({
     subsets: ["arabic"],
 });
 
-export const metadata = {
-    title: "Landr - صفحه اصلی",
+export const metadata: Metadata = {
+    icons: "/icons/favicon.ico",
+    title: "صفحه اصلی | Landr",
     description:
         "شغل رویایی خود را با هوش مصنوعی زودتر به دست بیاورید. مصاحبه‌های شبیه‌سازی شده، تحلیل رزومه و آماده‌سازی فنی برای جستجوی شغلی موفق‌تر.",
-    icons: {
-        icon: "/favicon.svg",
-    },
-    appleTouchIcon: "/apple-apple-touch-icon-180.png",
     appleWebApp: {
         capable: true,
-        statusBarStyle: "black-translucent",
+        statusBarStyle: "default",
     },
+    formatDetection: {
+        telephone: false,
+    },
+};
+
+export const viewport: Viewport = {
+    themeColor: "#FFFFFF",
 };
 
 export default function RootLayout({

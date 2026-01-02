@@ -12,7 +12,7 @@ interface IAppLayout {
 }
 
 export const metadata: Metadata = {
-    title: "Landr",
+    title: "پنل کاربری",
 };
 
 export default async function AppLayout({ children }: IAppLayout) {
